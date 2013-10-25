@@ -1,0 +1,47 @@
+/*USING ARRAYS 
+ Computer Science's Class*/
+
+
+
+#include <iostream>
+using namespace std ;
+#include <string>
+
+const int SIZE = 5 ;
+
+int main ()
+{
+
+    int exams [SIZE] ;
+    cout << "Ingrese " << SIZE << " puntuaciones\n\n" ;
+    
+    for (int i = 0 ; i < SIZE ; i++)
+    {
+        
+        cout << "Ingrese la puntuacion " << (i + 1 )
+                         << ")" ;
+        cin >> exams [i] ;
+        
+        
+    }
+    
+    system ("cls") ;
+    
+    cout << " Las puntuaciones son :\n\n" ;
+    for (int i = 0 ; i < SIZE ; i ++ )
+    cout  << (i + 1) << ")" << exams [i] << endl <<endl << endl  ; 
+
+
+    int suma  = 0; 
+    for (int i = 0 ; i < SIZE ; i ++)
+    
+    suma += exams[i] ;
+
+    double prom = double(suma)/ double (SIZE) ;
+    cout << "Promedio = " << prom << endl << endl  ; 
+
+
+    system ("pause") ;
+    return 0 ;
+    
+}
